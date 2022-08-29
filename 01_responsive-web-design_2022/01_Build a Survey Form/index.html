@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    <h1 id="title">Sub or Dub?</h1>
+    <p id="description">There a 2 main types of enjoying anime for non japanese speakers viewvers</p>
+    <p>- help us find the most popular -</p>
+    <form id="survey-form">
+        <!-- Personal Info -->
+        <fieldset>
+            <label id="name-label">Name: <input type="text" id="name" placeholder="Enter a name or alias" required></lable>
+            <label id="number-label">Age: <input type="number" id="number" placeholder="0" min="12" max="99" required></label>
+            <label id="email-label">Email: <input type="email" id="email"placeholder="Enter a valid email" required></label>
+            <label id="favorite-label">Favorite anime: <input type="text" placeholder="My favorite anime is..." required></label>
+        </fieldset>
+
+        <!--likes info -->
+        <fieldset>
+            <label id="dropdown-label">whats your favorite platform:
+                <select id="dropdown">
+                  <option value="0">Select one</option>
+                  <option value="other">Other</option>
+                  <option value="netflix">Netflix</option>
+                  <option value="crunchyroll">Crunchyroll</option>
+                  <option value="amazon">Amazon Prime Video</option>
+                </select>
+            </label>
+            <p>What do you like the most?</p>
+            <label>Anime<input type="radio" name="likes-most" value="anime"></label>
+            <label>Manga<input type="radio" name="likes-most"value="manga" ></label>
+            <label>Light Novels<input type="radio" name="likes-most" value="novel" ></label>
+        </fieldset>
+        
+        <!-- Survey info -->
+        <fieldset>
+            <label id="manga-adapt-label">Which manga would you like to see an anime adaptation of?<input type="text" id="manga-adapt" required></label>
+            <label id="anime-adap-label">Which Light Novel would you like to see an anime adaptation of?<input type="text" id="anime-adapt" required></label>
+            <label id="season-label">Is there an anime you would like to see a new season of?<input type="text" id="season" required></label>
+            <label id="">Why should it get an anime: <textarea name="about" id="" cols="30" rows="10" placeholder="I think manga/anime/light novel it should get an anime because..."></textarea></label>
+
+        </fieldset>
+        <fieldset>
+          <label >Would you like to get anime recomendations? <input type="checkbox" value="anime-recomendation"></label>
+          <label >Would you like to get manga recomendations? <input type="checkbox" value="manga-recomendation"></label>
+          <label >Would you like to get Light novels recomendations? <input type="checkbox" value="novel-recomendation"></label>
+        </fieldset>
+        <input id="submit"  type="submit" value="Submit">
+    </form>
+  </body>
+</html>
