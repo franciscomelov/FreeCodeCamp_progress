@@ -14,7 +14,7 @@
     <form id="survey-form">
         <!-- Personal Info -->
         <fieldset>
-            <label id="name-label">Name: <input type="text" id="name" placeholder="Enter a name or alias" required></lable>
+            <label id="name-label">Name: <input type="text" id="name" placeholder="Enter a name or alias" required></label>
             <label id="number-label">Age: <input type="number" id="number" placeholder="0" min="12" max="99" required></label>
             <label id="email-label">Email: <input type="email" id="email"placeholder="Enter a valid email" required></label>
             <label id="favorite-label">Favorite anime: <input type="text" placeholder="My favorite anime is..." required></label>
@@ -32,9 +32,9 @@
                 </select>
             </label>
             <p>What do you like the most?</p>
-            <label>Anime<input type="radio" name="likes-most" value="anime"></label>
-            <label>Manga<input type="radio" name="likes-most"value="manga" ></label>
-            <label>Light Novels<input type="radio" name="likes-most" value="novel" ></label>
+            <label class="close"><input type="radio" name="likes-most" value="anime" class="inline">Anime</label>
+            <label class="close"><input type="radio" name="likes-most"value="manga" class="inline">Manga</label>
+            <label class="close"><input type="radio" name="likes-most" value="novel" class="inline">Light Novels</label>
         </fieldset>
         
         <!-- Survey info -->
@@ -45,12 +45,15 @@
             <label id="">Why should it get an anime: <textarea name="about" id="" cols="30" rows="10" placeholder="I think manga/anime/light novel it should get an anime because..."></textarea></label>
 
         </fieldset>
+
+        <!-- Recomendations -->
         <fieldset>
-          <label >Would you like to get anime recomendations? <input type="checkbox" value="anime-recomendation"></label>
-          <label >Would you like to get manga recomendations? <input type="checkbox" value="manga-recomendation"></label>
-          <label >Would you like to get Light novels recomendations? <input type="checkbox" value="novel-recomendation"></label>
+          <label class="close"><input type="checkbox" value="anime-recomendation" class="inline">Would you like to get anime recomendations?</label>
+          <label class="close"><input type="checkbox" value="manga-recomendation" class="inline">Would you like to get manga recomendations?</label>
+          <label class="close"><input type="checkbox" value="novel-recomendation" class="inline">Would you like to get Light novels recomendations?</label>
         </fieldset>
         <input id="submit"  type="submit" value="Submit">
     </form>
+    <div class="space"></div>
   </body>
 </html>
