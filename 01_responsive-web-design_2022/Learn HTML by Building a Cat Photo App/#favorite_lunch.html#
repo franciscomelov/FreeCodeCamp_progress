@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <title>My Favorite Lunch</title>
+  </head>
+  <body>
+    <main>
+      <h1>My Favorite lunch</h1>
+      <p>In a world with different types of food every body has a favorite</p>
+      <p>What's yours<p>
+      <figure>
+      <img src="./food.webp" alt="food ingredients">
+      <figcaption>there is a limitless types of food.</figcaption>
+      </figure>
+      <h3>types of food:</h3>
+      <form action="some_url">
+
+      <fieldset>
+          <legend>choose tour favorites meals during the day</legend>
+          <label><input id="breakfast" name="meals" value="breakfast" type="checkbox" > Breakfast</label>
+          <label><input id="lunch" name="meals" value="lunch" type="checkbox"> Lunch</label>
+          <label><input id="Supper" name="meals" value="supper" type="checkbox"> Supper</label>
+          <label><input id="dinner" name="meals" value="dinner" type="checkbox"> Dinner</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>From where is your favorite food?</legend>
+        <input id="mexican" name="nationality" value="mexican" type="radio" checked> <label for="mexican">Mexican</label>
+        <input id="italian" name="nationality" value="italian" type="radio"> <label for="italian">Italian</label>
+        <input id="asian" name="nationality" value="asian" type="radio"> <label for="asian">Asian</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What's your favorite dish?</legend>
+        <input id="dish"  type="text" placeholder="My fovorite dish is..." required>
+      </fieldset>
+      <button type="submit">Send</button>
+
+      </form>
+
+
+    </main>
+  </body>
+</html>
+
+
+
