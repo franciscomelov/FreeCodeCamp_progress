@@ -70,3 +70,72 @@ article p{
 <article>
 <p></p>
 </article>
+
+
+// padding
+is the space of the content and the inside of the element borders
+
+selector{
+  padding: 20px
+}
+
+// margin and padding
+usiing just padding or margin will target all 4 sides
+
+selector{
+   margin:20px 
+}
+or
+selector{
+  margin-top:20px;
+  margin-bottom:20px
+  margin-left:20px;
+  margin-rigth: 20px
+}
+
+// max-widht will give a max value, to avoid probles with bigger monitors
+selector{
+  max-width: 500px
+}
+
+// to change the font
+selector{
+  font-family: font;
+}
+
+// in case a font is not font you can add an alternative
+selector{
+  font-family: font, font2, font3...
+}
+
+//to chage the style, 
+selector{
+  font-style: italic;
+
+
+}
+
+// change the height of an element
+selector{
+  heigth:10px;
+}
+
+// to chanhe the ccolor of the borders
+selector{
+  border-color:color;
+}
+
+// anchors <a> have a psudo selector to target styles after vissited
+a:visited{
+  property:value;
+}
+
+//anchors <a> have a pseudo selector when hovering
+a:hover{
+  property:value;
+}
+
+//anchors <a> have a pseudo selector when clicking
+a:active{
+  property:value
+}

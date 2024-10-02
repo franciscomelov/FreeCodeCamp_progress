@@ -154,5 +154,9 @@ h1, h2, p{
 
 
 // to represent content, blog entry, a post,...
+multiple element that have related information
 <article>
 </article>
+
+// you can add a divider a line 
+<hr>
