@@ -139,3 +139,14 @@ a:hover{
 a:active{
   property:value
 }
+
+-----
+<!-- Learn CSS Colors by Building a Set of Colored Markers -->
+
+
+// colors
+You can add color by its name or by the rgb ccode
+each number is the  color value red, gree, blue
+selector{
+  color: rgb(0, 0, 0)
+}

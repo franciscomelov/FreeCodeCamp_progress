@@ -160,3 +160,9 @@ multiple element that have related information
 
 // you can add a divider a line 
 <hr>
+
+ 
+ ************************************************************
+<!-- Learn CSS Colors by Building a Set of Colored Markers -->
+
+
