@@ -253,3 +253,31 @@ without
 with
 #FFFFFFAA
 two extra values
+
+---------------------------------------------------
+//units
+// rem stand for root em, relative to the font size of the html elemnt
+
+TO select the last element 
+
+selector:last-of-type{
+
+}
+p:last-of-type{
+
+}
+<p></p>
+<p></p>
+<p></p> // onñy this one
+
+
+/ to align elements vetically
+
+selector{
+  vertical-align: middle;
+}
+
+// to specyfy more in the element selected
+Atribute selector
+input[name=password]{
+}

@@ -166,3 +166,52 @@ multiple element that have related information
 <!-- Learn CSS Colors by Building a Set of Colored Markers -->
 
 
+------------------------------------------------------------
+
+// to specify how to dend datain a form use the "method" attribute
+and use
+POST - will be sent via a post request as data in the request bosy
+GET - will be sent via a get reques as URL parameters
+
+
+// with password type input
+ypou can specify a minimum charlength
+<input type="password" minlength=8>
+
+ot to add a regex attern to match
+<input type="password" pattern="[a-z0-5]{8,}"
+The above is a regular expression which matches eight or more lowercase letters or the digits 0 to 5.
+
+for number tyoe inputs you can add min a mx number accepteed value
+<input type="number" min=2 max=999 />
+
+
+// to add dropdown menu
+<select>
+  <option></option>
+</select>
+          <select>
+            <option>(select one)</option>
+            <option>freeCodeCamp News</option>
+            <option>freeCodeCamp YouTube Channel</option>
+            <option>freeCodeCamp Forum</option>
+            <option>Other</option>
+          </select>
+
+![alt text](image-5.png)
+
+// submiting an option, like the example above will not send useful information, adding a value is the norm
+          <select>
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+
+// the <textarea></textarea> is another type of input text, but this one shows a buigger text box for multiple line texts
+
+<textarea></textarea>
+to give it an iniat custos size
+<textarea rows=12 cols=22></textarea>
+
