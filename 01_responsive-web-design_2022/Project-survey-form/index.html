@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Take me to mars</title>
+
+    </head>
+    <body>
+        <h1 id="title">Are you ready to go to Mars</h1>
+        <p id="description">You have been selected to one free trip.</p>
+
+    <form id="survey-form" method="post" action="ttps://register-demo.freecodecamp.org">
+
+    <fieldset>
+        <legend>Personal information</legend>
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Juana perez" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="juanp@als.com" required /></label>
+        <label id="number-label" for="number">Age: <input id="number" type="number" min="18" max="99" placeholder="18-99" required /></label>
+        <label for="dropdown">What's your continent?:
+            <select id="dropdown">
+                <option>(Select one)</option>
+                <option>America</option>
+                <option>Europe</option>
+                <option>Asia</option>
+                <option>Africa</option>
+                <option>oceania</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Physical ability</legend>
+        Can you run up to:
+        <label for="run-10"><input id="run-10" name="run-distance" type="radio" value="10" checked /> 10k</label>
+        <label for="run-21"><input id="run-21" name="run-distance" type="radio" value="21" /> 21k</label>
+        <label for="run-42"><input id="run-42" name="run-distance" type="radio" value="42" /> 42k</label>
+        Do you regularly practice:
+        <label for="practice-yoga"><input id="practice-yoga" name="sport" value="yoga" type="checkbox" /> Yoga</label>
+        <label for="practice-martial-arts"><input id="practice-martial-arts" name="sport" type="checkbox" value="martial-arts" /> Martial arts</label>
+        <label for="practice-running"><input id="practice-running" name="sport" type="checkbox" value="running" /> Running</label>
+        <label for="practice-none"><input id="practice-none" name="sport" value="none" type="checkbox" /> None</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>About me</legend>
+        <label for="about-ability">A ability that will make excel in this trip: 
+            <textarea id="ability" name="about-ability" placeholder="I have been..."></textarea>
+        </label>
+        <label for="about-interesting">Something interesting about you:
+            <textarea id="about-interesting" name="about-interesting" placeholder="I can make people laugh"></textarea>
+        </label>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit">
+    </form>
+
+    </body>
+</html>
