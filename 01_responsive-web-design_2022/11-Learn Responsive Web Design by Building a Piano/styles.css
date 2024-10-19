@@ -1,5 +1,8 @@
 html {
     box-sizing: border-box;
+
+      cursor:url('../truck.png'), auto;
+
   }
   
   *, *::before, *::after {
@@ -14,6 +17,10 @@ html {
     padding: 90px 20px 0 20px;
     position: relative;
     border-radius: 10px;
+  }
+
+  .key:hover{
+    cursor:url('../truck.png'), auto;
   }
   
   .keys {
