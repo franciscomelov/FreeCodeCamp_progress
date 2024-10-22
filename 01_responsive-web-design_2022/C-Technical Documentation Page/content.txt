@@ -1,0 +1,21 @@
+Crea una especia de documentacion tecnica
+apartir del titulo,subtitulos y sub-subtitulos
+
+Si es necesario añadir otro subtitulo.
+Añadir codigo de ejemplo como una pequeña introduccion.
+
+*Como comenzar a programar.
+
+**Que es programar.
+
+**Todo el mundo puede programar.
+
+**Como empezar.
+***Una pequeña lista de lenguajes y para que se utilizan
+
+**consejos.
+
+
+*El primer paso es empezar.
+
+

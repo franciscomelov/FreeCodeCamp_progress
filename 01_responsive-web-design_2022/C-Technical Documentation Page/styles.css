@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 #navbar {
     position: absolute;
     background-color: red;
@@ -12,6 +16,20 @@
 #main-doc {
     position: fixed;
     margin-left: 250px;
+}
 
 
+/* FOR SMALL SCREENS */
+
+@media (max-width:700px){
+    #navbar{
+        position:unset;
+        width: 100%;
+        background-color: blue;
+    }
+
+    #main-doc {
+        position: unset;
+        margin: 0 0 0 10px;
+    }
 }
