@@ -381,6 +381,14 @@ test = test + 1;
 test += 1;
 test ++
 ```
+
+The mase is posible for subtraction
+
+```javascript
+i = i -1
+i -= 1
+i--
+```
 ---
 ---
 ### Comments
@@ -497,4 +505,29 @@ A while loop will run until the condition is no longer true
 while (condition) {
   logic;
 }
+```
+
+---
+---
+array methods .unshift() .shift()
+
+array.unshift()
+adds a value to the begining of an array and it returns 
+the new lenght
+
+```javascript
+const countDown = [2, 1, 0]; //initial values
+const newLength = countDown.unshift(3); // add 3 at the beggining
+console.log(countDown); // [3, 2, 1, 0] 
+console.log(newLength); // 4
+```
+
+array.shift()
+removes the fist element of an array
+and returns the extracted value
+
+```javascript
+const numbers = [1, 2, 3];
+numbers.shift();
+console.log(numbers) // [2, 3]
 ```
