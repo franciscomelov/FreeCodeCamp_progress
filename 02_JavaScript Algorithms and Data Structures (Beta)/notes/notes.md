@@ -531,3 +531,146 @@ const numbers = [1, 2, 3];
 numbers.shift();
 console.log(numbers) // [2, 3]
 ```
+
+
+---
+---
+## Add javascript to you html
+
+```html
+
+<body>
+
+  <script>
+    // code here
+    console.log("Hello World");
+  </script>
+</body>
+```
+
+Like css you can add a separete file for your js code
+
+```html
+<script srcc="./script.js">
+</script>
+```
+now you can write your js code in a separe file just la with css
+
+---
+---
+# access the html dcument trough js
+
+the querySelector("");
+
+finds the first element that match the css like querySelector
+
+```javascript
+// to match the fist h1 element
+let h1 = document.querySelector("h1"); 
+
+// to match a class
+let h1 = document.querySelector(".my-Class"); 
+
+// to match an id 
+let h1 = document.querySelector("#my-id"); 
+```
+
+---
+---
+# javascript  properties
+YOu can accsess elements properties
+to determine what happens when you iterct with the element
+
+## button properties onclick
+here we call a button and save it in a button connstant
+```javascript
+const button1 = document.querySelector('#button1');
+
+// to access the properties we can use dot notation
+button1.onclick = myfunction;
+```
+we call the .onclick property from the button
+and when the button is clicked we call `myfunction`
+wich is a function we can create
+
+notice that `myfunction` doeen't have `()`
+
+
+## text properties
+we can change the text from elements with 
+`innerText`
+
+```javascript
+//html
+<p id="info">Demo content</p> 
+// we have p element
+
+// we call the #info element
+const info = document.querySelector("#info"); 
+
+//and use innerText to change the text
+info.innerText = "Hello World"; 
+
+// from Demo content to Hello World
+
+
+```
+example :
+```javascript
+
+const button1 = document.querySelector("#button1")
+
+button1.onclick = changeText
+function changeText() {
+  button1.innerText = "I am the new text"
+}
+
+// we sabe in button1 a button with the id button1
+
+//ad onclick and reference changeText when the button is clicked
+// inside changeText we change the taxt from the same button
+```
+
+---
+---
+# scape character \
+
+```javascript 
+//this tring will print like this
+"I am TEXT"
+> I am TEXT
+```
+but what if want to print it like this 
+> I am "TEXT"
+
+TEXT in quotes
+
+this will trow an error becausei am closing the quotes
+```javascript
+"I am "TEXT""
+
+```
+
+to do this we use scape the TEXT quotes with \
+```javascript
+"I am \"TEXT\""
+
+> I am "TEXT"
+
+```
+
+
+---
+---
+# Objects
+an object lets you save values in akey-value pair
+
+
+{
+  key: value
+}
+
+```javascript
+// a cat constant with an empty object
+const cat = {};
+```
