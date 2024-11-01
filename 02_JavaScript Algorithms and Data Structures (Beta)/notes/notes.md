@@ -673,4 +673,40 @@ an object lets you save values in akey-value pair
 ```javascript
 // a cat constant with an empty object
 const cat = {};
+console.log(cat)
+> {}
 ```
+
+Here is an example of an object with data
+```javascript
+const obj = {
+  name: "Quincy Larson",
+  "Space Name": "Kirk",
+};
+```
+is the key has a space use double quotes
+
+```javascript
+const cat = {
+  name: "Whiskers",
+  "Number of legs": 4
+};
+console.log(cat)
+> { name: 'Whiskers', 'Number of legs': 4 }
+```
+
+to access the values we can use dot notation or bracket
+. []
+```javascript
+const cat = {
+  name: "Whiskers",
+  "Number of legs": 4
+};
+
+console.log(cat.name)
+> Whiskers
+
+console.log(cat["Number of legs"]);
+> 4
+```
+if the key has a space you need to use brackets `[]`
