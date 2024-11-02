@@ -710,3 +710,37 @@ console.log(cat["Number of legs"]);
 > 4
 ```
 if the key has a space you need to use brackets `[]`
+
+---
+---
+# Acces styling in javascript
+
+by accessing the style properti we can modigy the styling like in css
+
+```css
+p{
+  display:none;
+}
+```
+
+```javascript
+const paragraph = document.querySelector('p');
+paragraph.style.display = 'block';
+```
+in the css code p is hidden button with js we can add a functionality to show the element
+
+---
+---
+# random numbers
+the js math object has different mathematical methos 
+.random() is one of the 
+Math.random()
+return a number between 0 and 1
+with this we can make random number
+
+```javascript
+random numbers
+Math.floor(Math.random() * 5) + 1; // from 1 to 5
+Math.floor(Math.random() * 10) + 1; // from 1 to 10
+```
+Math.floor() rond the number down
