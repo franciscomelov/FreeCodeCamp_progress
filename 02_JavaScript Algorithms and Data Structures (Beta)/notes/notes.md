@@ -850,3 +850,166 @@ if (numbersArray.includes(number)) {
   console.log("The number is in the array.")
 }
 ```
+
+---
+---
+# access an html element by id
+similar to .querySelector()
+
+you can access an element by its id
+document.getElementById("...")
+
+example:
+```javascript
+<h1 id="title">Main title</h1>
+
+
+const mainTitleElement = document.getElementById('title');
+```
+In this case you just need the name of the id
+
+---
+---
+# regex
+regular expresions regex
+are used to match patterns
+
+example:
+```javascript
+const regex = /hello/;
+```
+this will will match the string literal "hello"
+
+```javascript
+const regex = /\+-/; // to match + and - characters
+```
+
+### shorthand characters
+let you match specific characters withput having to wrte them
+
+example:
+```javascript
+ const regex = /\s/
+```
+\s -> matches whitespace
+
+```javascript
+ regex = /\+-\s/; // mconstatches "+" "-" " "
+```
+
+### character class []
+
+```javascript
+
+regex = /\+-\s/;
+// this will match "+- "
+// but won´t "+ - "
+//it will match the specific string
+```
+
+to match each character individually we use character classes [...]
+```javascript
+const regex = /[+-\s]/;
+```
+
+### regex flags 
+flags let you add more matching behaviour
+the g flag -> is the global flag, it will continue looking after it has fountd a match
+
+```javascript
+const helloRegex = /hello/g;
+```
+it goes after the closing /
+
+the i flag -> for case insensitive
+
+```javascript
+/Hello/i
+// will match hEllo, heLLo, etc
+// the casing wont matter
+```
+---
+---
+# .replace() method
+
+the string.replace() methode replaces characters
+
+string.replace(character to replac, the string that will replace)
+the first argument accepts regex or string 
+
+example:
+```javascript
+"hello".replace(/l/g, "1");
+> he11o
+```
+this will replace all `l` with `1`
+
+example:
+```javascript
+  const regex = /[+-\s]/g;
+  return str.replace(regex, "");
+
+```
+
+# regex
+```javascript
+[0-9] // will match any number from 0 to 9
+1
+```
+the + modifier allows you to matchpatterns that occur more than once
+
+```javascript
+[0-9]+ // will match any number from 0 to 9, multipletimes
+122112
+```
+the shorthand \d will match any digit
+```javascript
+\d
+[0-9]
+
+// both are the same
+```
+
+---
+---
+# method match
+the .match method will return a matched string
+str.match(string to match)
+```javascript
+const str = 'example string';
+const regex = /example/;
+const result = str.match(regex); // Returns ['example']
+```
+if g global is added-> it will return all the matches if not just the firs one
+
+example:
+```javascript
+ const regex = /\d+e\d+/i;
+ str="1e3"
+  str.match(regex);
+// [ '1e3', index: 0, input: '1e3', groups: undefined ]
+```
+Here is a complete breakdown of that information:
+
+"1e3" is the matched value against the /\d+e\d+/i regex.
+index: 0 is the index of the matched value in the string.
+input: '1e3' is the original string that was matched.
+groups: undefined are the matched groups, which are not used in this case. You will learn more about groups in a later project.
+
+If there is no match it will return `null`
+
+
+---
+---
+# get an element value
+
+to get the value from inout element we ca use .value
+
+example:
+```javascript
+const entryDropdown = document.getElementById('entry-dropdown');
+console.log(
+  entryDropdown.value
+)
+// will return the selected value in the dropdown
+```
