@@ -744,3 +744,109 @@ Math.floor(Math.random() * 5) + 1; // from 1 to 5
 Math.floor(Math.random() * 10) + 1; // from 1 to 10
 ```
 Math.floor() rond the number down
+
+---
+---
+# add quoes to strings
+
+instead of \ to add quotes
+"hi my \"love\"."
+we can use single quotes to diferentiate from double
+
+'hi my "love".'
+
+both will print the same
+hi my "love".
+
+---
+---
+# change the content of an element with js
+html code:
+
+```html
+
+<p id="demo">This is a paragraph.</p>
+
+```
+js code:
+```javascript
+
+document.querySelector("#demo").innerHTML = "Hello, innerHTML!";
+
+```
+imaginge youare passing tags to to innerHTML and innerText
+`.innerHTML would show = hi i am <strong>bold</strong>`
+
+`.innerText  would show = hi i am bold `
+with bold bolded but 
+
+---
+---
+# ternaty operation
+Is similar to an if-else statement but in one line
+```javascript
+condition ? if-true : if-fasle
+```
+example:
+```javascript
+// if-else statement
+if (score > 0) {
+  return score
+} else {
+  return default_score
+}
+
+// ternary operator
+return score > 0 ? score : default_score
+```
+
+---
+---
+# logic operators
+or operation
+```javascript
+||
+
+true || true 
+true or true
+true if only one statement is true
+```
+
+if operator
+```javascript
+&&
+
+true && true
+true and true
+
+return true only if both statements are true
+```
+
+---
+---
+# add a new line
+
+\n = a new line
+
+```javascript
+console.log("line 1 \n line 2")
+>line 1
+>line 2
+```
+
+---
+---
+# .includes methods
+
+to check if an array contains an element we can use
+array.includes(element)
+
+example:
+```javascript
+const numbersArray = [1, 2, 3, 4, 5]
+const number = 3
+// this will checj if number is in numbersArray 
+if (numbersArray.includes(number)) {
+  console.log("The number is in the array.")
+}
+```
