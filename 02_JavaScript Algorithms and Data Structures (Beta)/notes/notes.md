@@ -780,6 +780,8 @@ imaginge youare passing tags to to innerHTML and innerText
 `.innerText  would show = hi i am bold `
 with bold bolded but 
 
+The difference between innerText and innerHTML is that innerText will not render HTML elements, but will display the tags and content as raw text.
+
 ---
 ---
 # ternaty operation
@@ -1118,3 +1120,72 @@ function myFunc(e) {
 button.addEventListener("click, myFunc )
 ```
 adding preventDefault(e) to the passed function will stop the default behavior
+
+---
+---
+# to lowe case 
+
+the method
+string.toLowerCase()
+
+will return the string in lower case
+```javascript
+const firstName = 'JESSICA';
+console.log(firstName.toLowerCase()); // Output: jessica
+```
+
+---
+---
+
+# Math.abs()
+
+an absolute number is the positive value of a number
+
+```javascript
+const num = -5;
+Math.abs(num); // 5
+```
+
+---
+---
+# remove class from element
+
+html element have the property .remove()
+which lets you remove a aclass from an element.
+
+```javascript
+const paragraphElement = document.getElementById('paragraph');
+paragraphElement.classList.remove('hide');
+```
+the class hide is removed from the paragraphElement element
+
+---
+---
+# NodeList to array
+document.querySelectorAll return a node list, but sometimes wi need it to be an array
+Array.from() converts it to an array
+
+```javascript
+<ul>
+  <li>List 1</li>
+  <li>List 2</li>
+  <li>List 3</li>
+</ul>
+
+
+const listItemsArray = Array.from(document.querySelectorAll('li'));
+
+console.log(listItemsArray); //Output: (3) [li, li, li]
+```
+
+---
+---
+# add a class to an element
+
+to do the opposite of classList.hide()
+which is add a class to an element we have
+classList.add()
+
+```javascript
+output.classList.add('hide');
+```
