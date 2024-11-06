@@ -1013,3 +1013,108 @@ console.log(
 )
 // will return the selected value in the dropdown
 ```
+---
+---
+# template literals
+
+instead of concatenating like this
+```javascript
+let name = "paco"
+
+console.log(
+  "hello " + name
+)
+```
+
+we can use template literals
+`` using backticks
+
+```javascript
+let name = "paco"
+
+console.log(
+  `hello ${name}`
+)
+```
+we put the variable name directly ${}
+
+
+---
+---
+#  querySelectorAll()
+
+the  querySelectorAll() method returns in a array all the elements that matches the selector
+
+```javascript
+//To obtain a NodeList of all of the <p> elements in the document:
+
+
+const matches = document.querySelectorAll("p");
+```
+
+---
+---
+# .addEventListener("click",...)
+
+the addEventListener method with the click event is similar to onclick()
+
+addEventListener(event-to-listen, callbackFunction)
+
+```javascript
+
+<button class="btn">Print name</button>
+const button = document.querySelector('.btn');
+
+function printName() {
+  console.log("Jessica");
+}
+
+button.addEventListener('click', printName);
+button.onclick = printName
+```
+
+both do the same, but they do have their differences
+
+---
+---
+
+# insertAdjacentHTML
+
+insertAdjacentHTML is similar to innerHTML but
+innerHTML -> dont preserve the existing content all content reset with each element added so if you have added input and put some values they will clear
+
+.insertAdjacentHTML() -> lets you presrver the data
+
+.insertAdjacentHTML(position of the inserted element,html to be inserted );
+
+the posisions are predetermined
+
+```javascript
+targetInputContainer.insertAdjacentHTML("beforeend",HTMLString );
+```
+
+---
+---
+# Number() string to number
+to convert an string to a number we the function Number()
+if the strinf cant be converted it will return NaN
+```javascript
+Number("10") // returns the number 10
+Number("abc")// return NaN
+```
+
+---
+---
+# global error flag 
+when using onclick on buttons in a form, 
+it will use submit behavior, thus, will try to reload the page to prevent this we can use
+preventDefault(e)
+```javascript
+
+function myFunc(e) {
+  preventDefault(e)
+}
+
+button.addEventListener("click, myFunc )
+```
+adding preventDefault(e) to the passed function will stop the default behavior
