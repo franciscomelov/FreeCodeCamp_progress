@@ -1189,3 +1189,169 @@ classList.add()
 ```javascript
 output.classList.add('hide');
 ```
+
+---
+---
+
+# srpead operator ...
+
+the spread operator allows you to copy array element or bobine them. without affecting the original array
+```javascript
+const arr1 = [1, 2, 3]
+const arr2 = [4, 5, 6]
+const combinedArr = [...arr1, ..arr2];
+console.log(combinedArr)
+> [1, 2, 3, 4, 5, 6]
+```
+
+---
+---
+
+# arrow function
+arrow function are anonymous and ashorter way to make a function
+
+```javascript
+() => {}
+
+// to add a name assign it to a variable
+
+const myFunc = () => {
+ console.log("hi") 
+}
+
+myFunc();
+```
+YOu can pass parameters
+```javascript
+
+
+const myFunc = (name) => {
+ console.log("hi " + name) 
+}
+
+// if you have only one parameter you can ommit the parentesis
+
+const myFunc = name => {
+ console.log("hi " + name) 
+}
+
+myfunc("paco")
+
+```
+You can return values
+```javascript
+
+
+
+const myFunc = (a, b) => {
+ return a + b;
+}
+
+myfunc(123, 654)
+
+```
+if your function only return a single value and do nothing else you can omit the eturn keyword and {}
+
+```javascript
+const myFunc = (a, b) =>  a + b;
+
+myfunc(123, 654)
+```
+
+---
+---
+# map() method
+the map method iterate through an array and returns a new array, 
+
+```javascript
+const numbers = [1, 2, 3];
+
+const doubledNumbers = numbers.map((number) => number * 2); 
+// doubledNumbers will be [2, 4, 6]
+```
+map iterate each value of numbers does, what the arrow function says and returns the value.
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+---
+---
+
+# join() method
+
+if you have an array, and want to join all the values into a single string you can use
+array.join()
+
+join accepts a separator as an argument,
+
+```javascript
+const exampleArr = ["This", "is", "a", "sentence"];
+const sentence = exampleArr.join(" "); // Separator takes a space character
+console.log(sentence); // Output: "This is a sentence"
+
+const exampleArr = ["This", "is", "a", "sentence"];
+const sentence = exampleArr.join("-"); // 
+console.log(sentence); // Output: "This-is-a-sentence"
+```
+
+---
+---
+
+# optional chaining ?.
+
+if you try to access an inexisting property in an object it will trow an error
+
+```javascript
+const adventurer = {
+  name: 'Alice',
+  cat: {
+    name: 'Dinah',
+  },
+};
+
+//cat.name exists and returns the value
+const dogName = adventurer.cat.name;
+console.log(dogName);
+// Expected output: Dinah
+
+
+//dog.name dont exists trows an error
+const dogName = adventurer.dog.name;
+console.log(dogName);
+// Expected output: Error: Cannot read properties of undefined (reading 'name')
+
+// now using ?. instead of an error return unespected
+const dogName = adventurer.dog?.name;
+console.log(dogName)
+// Expected output: undefined
+```
+
+---
+---
+
+# sort() metod
+
+the sort() method allows you to sort elements in an array
+it conversts them to strings and dort them
+
+```javascript
+const names = ["Tom", "Jessica", "Quincy", "Naomi"];
+names.sort() // ["Jessica", "Naomi", "Quincy", "Tom"]
+```
+
+---
+---
+# find() method
+
+Thhe find methos returns the first element that fullfils the condition in the callvack function
+
+In the example below, the find() method is used to find the first number greater than 25:
+
+```javascript
+const numbers = [10, 20, 30, 40, 50];
+
+// Find the first number greater than 25
+const foundNumber = numbers.find((number) => number > 25);
+console.log(foundNumber); // Output: 30
+```
