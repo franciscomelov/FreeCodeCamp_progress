@@ -1340,6 +1340,12 @@ const names = ["Tom", "Jessica", "Quincy", "Naomi"];
 names.sort() // ["Jessica", "Naomi", "Quincy", "Tom"]
 ```
 
+One way to randomize an array using sort(), arrow function and and Math.random is
+```javascript
+const names = ["Tom", "Jessica", "Quincy", "Naomi"];
+names.sort(() => Math.random() - 0.5);
+```
+
 ---
 ---
 # find() method
@@ -1354,4 +1360,129 @@ const numbers = [10, 20, 30, 40, 50];
 // Find the first number greater than 25
 const foundNumber = numbers.find((number) => number > 25);
 console.log(foundNumber); // Output: 30
+```
+
+---
+---
+# indexof()
+
+to get the index of an element inside an arraywe have the 
+indexOf() method array.indexOf(value to find)
+
+```javascript
+const animals = ["dog", "cat", "horse"];
+animals.indexOf("dog") // 0
+
+animals.indexOf("penguin") // -1
+```
+if the element is not in the array, it will return -1
+
+---
+---
+# forEach()
+
+the array.forEach() method iterates in each element of the array an does what the arrow funtion tells it, it does not return a new array
+
+```javascript
+const number = [1, 2, 3, 4, 5]
+numbers.forEach((number) => {
+  console.log(number) // 1, 2, 3, 4, 5
+})
+```
+
+---
+---
+# removeAttribute() and setAttribute()
+
+the removeAttribute() method removes an attribute from an element
+
+```javascript
+document.getElementById("div1").removeAttribute("disabled");
+```
+
+If you want to give an attribute to an element you can use setAttribute(attribute, value)
+
+```javascript
+const button = document.querySelector("button");
+
+button.setAttribute("name", "helloButton");
+button.setAttribute("disabled", "");
+```
+
+
+---
+---
+
+# textContent
+
+to get the text of an html element we use textContent()
+
+```javascript
+<div id="example">This is some text content</div>
+
+const element = document.getElementById('example');
+console.log(element.textContent); // Output: This is some text content
+```
+
+
+---
+---
+
+# filter()
+
+the filter method keeps only the element that satisfy the callback function passed
+
+```javascript
+const numArr = [1, 10, 8, 3, 4, 5]
+const numsGreaterThanThree = numArr.filter((num) => num > 3);
+
+console.log(numsGreaterThanThree) // Output: [10, 8, 4, 5]
+
+```
+
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+---
+---
+# createElement()
+to create an html element from javascript you can use createElement()
+
+```javascript
+// syntax
+document.createElement(tagName)
+
+// example
+document.createElement('div')
+
+// assign it to  variable
+const divElement = document.createElement('div')
+```
+
+---
+---
+
+# createTextNode()
+ 
+to create a text node we use createTextNode
+
+```javascript
+//syntax
+document.createTextNode("your text")
+
+const myText = document.createTextNode("your text")
+```
+
+---
+---
+# appendChild()
+
+to add a nodeText to an element we can use appendChild() to add the created text as a appendChild
+
+```javascript
+const parentElement = document.createElement("button")
+const parentElementText = document.createTextNode("Click me")
+
+// attach the text "Click me" to the button
+parentElement.appendChild(parentElementText)
 ```
