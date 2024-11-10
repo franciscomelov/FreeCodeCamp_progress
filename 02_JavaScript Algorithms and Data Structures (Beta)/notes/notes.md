@@ -1424,6 +1424,14 @@ const element = document.getElementById('example');
 console.log(element.textContent); // Output: This is some text content
 ```
 
+or to add text to an element
+
+```javascript
+<div id="example"></div>
+
+const element = document.getElementById('example');
+element.textContent = "I am an added text" // this text will render 
+```
 
 ---
 ---
@@ -1485,4 +1493,158 @@ const parentElementText = document.createTextNode("Click me")
 
 // attach the text "Click me" to the button
 parentElement.appendChild(parentElementText)
+```
+
+
+---
+---
+
+# Date()
+
+the Date() object returns a string with the current date and time
+
+```javascript
+const currentDate = new Date();
+console.log(currentDate);
+
+// Output:
+// Mon Aug 23 2021 15:31:00 GMT-0400 (Eastern Daylight Time)
+```
+the Date() has a .getDate() method that return the date odf the month 
+
+```javascript
+const date = new Date();
+const dayOfTheMonth = date.getDate();
+console.log(dayOfTheMonth); // 20
+```
+
+to get the month you can use .getMonth() it will return a number between 0 and 11, like in an index it start at 0 to match it to 12 months just add 1
+
+```json
+const date = new Date();
+const month = date.getMonth(); + 1
+console.log(month); // 11
+```
+
+and the .getFullYear() method returns the year 
+
+```javascript
+const date = new Date();
+const year = date.getFullYear(); 
+console.log(year); // 2024
+```
+
+the .getHours() will return the hour a number between 0 and 23
+
+```javascript
+const date = new Date();
+const hours = date.getHours()
+console.log(hours); // 18
+```
+
+the .getMinutes() method return a number between 0 and 59
+
+```javascript
+const date = new Date()
+const minutes = date.getMinutes()
+console.log(minutes)
+```
+
+---
+---
+# addEventListener("change",()=>{})
+
+the `change` event detects when the value of an element has changed
+
+```javascript
+element.addEventListener("change",()=>{})
+```
+
+---
+---
+# switch statement
+
+the switch statement is similar to an if statement but usefull to compare an expresion against multiple posible values and execute acode block
+
+```javascript
+switch (dayOfWeek) {
+  case 1:
+    console.log("It's Monday!");
+    break;
+  case 2:
+    console.log("It's Tuesday!");
+    break;
+  // ...cases for other workdays
+  default:
+    console.log("It's the weekend!");
+}
+```
+
+```javascript
+switch (userAnswer) {
+  case "yes":
+    //do somthing
+    break;
+  case "no":
+    // dont do something
+    break;
+  // ...cases for other options
+  default:
+    console.log("choose an option");
+}
+```
+
+the default case executes when nonen of the other cases match like an else in an if statement
+
+---
+---
+ 
+ # split()
+
+ the split() method splits a string based on a separator and return an array 
+
+ ```javascript
+ const greeting = "Hello World";
+greeting.split(); // ["Hello World"]
+ ```
+ at the moment thre is no separator so it return the string as one value on the array.
+ the separator thells the method where each split should occur
+
+```javascript
+ const greeting = "Hello World";
+greeting.split(" "); // ["Hello", "World"]
+ ```
+
+ NOw the separator is an space, so it will split the string in each space and each part of the string is an element of the array
+
+ ---
+ ---
+ # reverse()
+
+ the reverse() methos reverses an arry
+ ```javascript
+ 
+[1, 2, 3, 4, 5].reverse(); 
+// returns [5, 4, 3, 2, 1]
+
+ ```
+
+---
+---
+
+# chaining methods
+
+based on the last methods
+
+you can chain diferent methos in one line
+
+- splits the string -> .split("")
+- reverses the array -> .reverse()
+- creates an string from the array -> .join("")
+
+```javascript
+
+const exampleSentence = "selur pmaCedoCeerf".split("").reverse().join("");
+console.log(exampleSentence);
+// returns -> freeCodeCamp rules
 ```
